@@ -1,0 +1,123 @@
+.item-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.item-card {
+  padding: 15px;
+  text-align: center;
+  border-radius: 10px; /* Add border-radius for a curved border */
+  background: linear-gradient(135deg, #3498db, #87CEEB); /* Light blue gradient background */
+  color: #fff; /* Text color */
+}
+
+.item-card img {
+  height: 45%; /* Adjust the height as needed */
+  width: 90%;}
+
+.quantity-controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.button-container {
+  margin-right: 10px;
+}
+
+input {
+  width: 50px;
+}
+
+
+/* Add this to your App.css file */
+.jumbotron {
+  background-color: #1066bb;
+  padding: 30px;
+  margin-top: 80px;
+  margin-bottom: 20px;
+  position: relative; /* Add position relative */
+  z-index: 1; /* Set a higher z-index to make sure it appears above the header */
+}
+
+.jumbotron img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+
+}
+
+.jumbotron h1 {
+  color: white;
+}
+
+.jumbotron p {
+  color: white;
+}
+
+/* Responsive styles for mobile screens */
+@media (max-width: 767px) {
+  .jumbotron img {
+    width: 100px;
+    height: 100px;
+  }
+  .jumbotron h1 {
+    color: white;
+    font-size: 30px;
+  }
+  
+}
+
+
+
+
+
+
+
+
+
+
+/* Styling for the "Sell" button */
+.buttonsell {
+  padding: px 15px;
+  background-color: #e74c3c; /* Red color */
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 5px 16px;
+}
+
+/* Styling for the "Buy" button */
+.buttonbuy {
+  padding: 5px 16px;
+
+  background-color: #2ecc71; /* Green color */
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Optional: Adjust styling for better visual appearance */
+.item-card {
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+img {
+  margin-bottom: 10px; /* Add space between image and other content */
+}
+/* Styling for the "Clear" button */
+.buttonclear {
+  padding: 5px 16px;
+  background-color: #3498db; /* Change color to a blue shade */
+  color: #fff;
+  border: none;
+  border-radius: 5px; /* Add border-radius to the button */
+  cursor: pointer;
+}
